@@ -6,3 +6,4 @@ pre_tel=tel
 tel="1322122"
 now_tel=tel
 print("现任电话号码："+tel)
+s="111111"
