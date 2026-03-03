@@ -14,21 +14,22 @@ print("四年后你的年龄是："+str(after_4years_age))   #整数类型用str
 
 
 # if now_age<20 :
-#         if money>10000 :
+#         if money>10000 :                       #双if加一个else的应用场景不广
 #             print("还是个有点钱的年轻人")
+#         else:
+#           print("一般人")
 
 #嵌套
-if now_age<20 :
-    print("还是一个年轻人")
-elif now_age>20 :
-    print("哎,老了")
-else:
-    print("刚满二十岁")
 money=int(input("目前有多少存款："))
-if money>100:
-    if money>1000:
-        print("有钱")
-    else:
-        print("有点小钱")
+# if now_age<20 :
+#     print("还是一个年轻人")
+# elif now_age>20 :                #此处结构if  else之间可以有多个elif
+#     print("哎,老了")              #语句是一行一行执行的
+# else:
+#     print("刚满二十岁")
+if money>1000:
+    print("有钱")
+elif money>100:
+    print("有点小钱")
 else:
-    print("有点穷")
+    print("有点穷")                #最常见的嵌套结构：if-elif-else
