@@ -15,9 +15,9 @@ afengfeng.fall_in_love()                               #不同子类之间调用
 afengfeng.red()
 class elementary(student):
     def __init__(self,name,stu_id,sex):             #第二种用法要初始化，因为有额外属性，子类参数（属性）可以比父类多些
-        super().__init__(name,stu_id)                 #super写法：后面的参数必须和父类保持一致
-        self.sex = sex
-    def no_smart_phone(self):
+        super().__init__(name,stu_id)             #super写法：后面的参数必须和父类保持一致，用来传给父类必要的参数进行实例对象绑定
+        self.sex = sex                             #如果是子类自定义的参数会在init方法里面，也要自己处理，
+    def no_smart_phone(self):                      #例如self.sex=sex,最终都会绑定到同一对象上面
         print(f"{self.name},你是小学生不能玩手机")
 xiaofeng=elementary("小峰",3,"男")
 print(f"姓名：{xiaofeng.name} 学号：{xiaofeng.id} 性别：{xiaofeng.sex}")
