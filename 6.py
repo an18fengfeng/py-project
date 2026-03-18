@@ -13,7 +13,7 @@ class student:
 
 #student_1=("小明","01")        #这里要有一个变量去存储，这样写只是创建了一个元组
 xiaoming=student("小明","01")#定义类好比定义了一个函数 def add,都要引用绑定的变量名(这里用的就是student这个类名)
-print(xiaoming.name)
+print(xiaoming.name)          #上面这里说错了，定义类是class+类名，类的实例化是变量=类名（参数）例：xiaoming=student
 print(xiaoming.grades)
 xiaoming.set_grade("数学",95)
 xiaoming.set_grade("语文",99)
